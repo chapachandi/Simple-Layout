@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Layout</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            /*margin: 0;*/
+            /*padding: 0;*/
+            font-family: 'Ubuntu', sans-serif;
+
+        }
+        body>header{
+            background-color: #b8b5b5;
+            text-align: right;
+            height: 10vh;
+            position: relative;
+        }
+        header>img{
+            left: 0;
+            /* padding: 10px; */
+            width: 150px;
+            height: 70px;
+            position: absolute;
+        }
+        header>ul{
+            position: absolute;
+            right: 24px;
+            font-size: 20px;
+            top: 0;
+            list-style: none;
+        }
+        header>ul>li{
+            display: inline-block;
+            padding: 5px;
+            cursor: pointer;
+            font-weight: bold
+        }
+        body>main{
+            /*background-color: #ffffff;*/
+            /*height: 90vh;*/
+            position: relative;
+        }
+        main>aside{
+            /*float: left;*/
+            background-color: darkblue;
+            /*height: 90vh;*/
+            width: 20vw;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+
+        }
+        aside>ul{
+            list-style: none;
+        }
+        aside>ul>li{
+            color: white;
+            font-weight: bold;
+            margin-top: 20px;
+            cursor: pointer;
+            padding: 10px;
+            font-size: 20px;
+        }
+        main>article{
+            /*height: 90vh;*/
+            /*width: 78.7vw;*/
+            /*background-color: #daffe6;*/
+            /*float: right;*/
+            /*position: relative;*/
+            /*top: 0;*/
+            margin-left: 300px;
+            padding: 10px;
+        }
+        /*p::selection{*/
+        /*    background: red;*/
+        /*    color: white;*/
+        /*}*/
+        article>section{
+            /*height: 40vh;*/
+            /*width: 27vw;*/
+            /*!*background-color: #ff4242;*!*/
+            /*position: absolute;*/
+            position: relative;
+            height: 350px;
+
+
+        }
+        article>section>div{
+            height: 100%;
+            width: calc((100% / 3) * 1);
+            position: absolute;
+            border: 1px dashed black;
+
+        }
+        section>div:nth-child(1){
+            left: 0;
+            background: url("assests/img/72Ut.gif");
+            background-size: cover;
+            background-position: center;
+
+        }
+        section>div:nth-child(2){
+            left: calc((100% / 3) * 1);
+            background: url("assests/img/a20d39afa5aa8e97-20-life-lessons-from-a-20-year-old-college-student-her-campus.gif");
+            background-size: cover;
+            background-position: center;
+
+        }
+        section>div:nth-child(3){
+            left: calc((100% / 3) * 2);
+            background: url("assests/img/blue-office.gif");
+            background-size: cover;
+            background-position: center;
+
+        }
+
+        /*article>div{*/
+        /*    background-color: #e5e5e5;*/
+        /*    text-align: left;*/
+        /*    height:50vh;*/
+        /*    width: 78.7vw;*/
+        /*    bottom: 0;*/
+        /*    position: absolute;*/
+        /*    font-size: medium;*/
+        /*    font-family: Arial;*/
+        /*    text-align: left;*/
+        /*    color: black;*/
+
+        /*}*/
+        body>footer{
+            clear: both;
+            background-color: #3b753d;
+            /*padding: 20px;*/
+            height: 50px;
+        }
+        footer>div{
+            color: #d5bcbc;
+            text-align: center;
+            padding: 10px;
+            margin: 0;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    <img src="assests/img/logo@2x.png">
+    <ul>
+        <li>Home</li>
+        <li>Services</li>
+        <li>Contacts</li>
+        <li>AboutUs</li>
+    </ul>
+
+</header>
+<main>
+    <aside>
+        <ul>
+            <li>Home</li>
+            <li>Services</li>
+            <li>Contacts</li>
+            <li>AboutUs</li>
+        </ul>
+    </aside>
+    <article>
+        <section>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorum earum obcaecati quasi veritatis. Doloremque,
+            minus, quae. At atque aut deleniti, eum, magnam, natus nulla pariatur quas reprehenderit sapiente voluptatem.
+        </p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorum earum obcaecati quasi veritatis. Doloremque,
+            minus, quae. At atque aut deleniti, eum, magnam, natus nulla pariatur quas reprehenderit sapiente voluptatem.
+        </p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorum earum obcaecati quasi veritatis. Doloremque,
+            minus, quae. At atque aut deleniti, eum, magnam, natus nulla pariatur quas reprehenderit sapiente voluptatem.
+        </p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorum earum obcaecati quasi veritatis. Doloremque,
+            minus, quae. At atque aut deleniti, eum, magnam, natus nulla pariatur quas reprehenderit sapiente voluptatem.
+        </p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorum earum obcaecati quasi veritatis. Doloremque,
+            minus, quae. At atque aut deleniti, eum, magnam, natus nulla pariatur quas reprehenderit sapiente voluptatem.
+        </p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorum earum obcaecati quasi veritatis. Doloremque,
+            minus, quae. At atque aut deleniti, eum, magnam, natus nulla pariatur quas reprehenderit sapiente voluptatem.
+        </p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorum earum obcaecati quasi veritatis. Doloremque,
+            minus, quae. At atque aut deleniti, eum, magnam, natus nulla pariatur quas reprehenderit sapiente voluptatem.
+        </p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorum earum obcaecati quasi veritatis. Doloremque,
+            minus, quae. At atque aut deleniti, eum, magnam, natus nulla pariatur quas reprehenderit sapiente voluptatem.
+        </p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorum earum obcaecati quasi veritatis. Doloremque,
+            minus, quae. At atque aut deleniti, eum, magnam, natus nulla pariatur quas reprehenderit sapiente voluptatem.
+        </p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorum earum obcaecati quasi veritatis. Doloremque,
+            minus, quae. At atque aut deleniti, eum, magnam, natus nulla pariatur quas reprehenderit sapiente voluptatem.
+        </p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorum earum obcaecati quasi veritatis. Doloremque,
+            minus, quae. At atque aut deleniti, eum, magnam, natus nulla pariatur quas reprehenderit sapiente voluptatem.
+        </p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorum earum obcaecati quasi veritatis. Doloremque,
+            minus, quae. At atque aut deleniti, eum, magnam, natus nulla pariatur quas reprehenderit sapiente voluptatem.
+        </p>
+
+
+    </article>
+</main>
+<footer>
+    <div>@ IJSE</div>
+</footer>
+
+</body>
+</html>
